@@ -6,18 +6,10 @@ from selenium.webdriver.common.keys import Keys
 
 
 
-DUCKDUCKGO_HOME = 'https://duckduckgo.com/'
-
+# DUCKDUCKGO_HOME = 'https://duckduckgo.com/'
+from tests.step_defs.conftest import DUCKDUCKGO_HOME
 
 scenarios('../features/web.feature')
-
-
-@pytest.fixture
-def browser():
-    b = webdriver.Firefox()
-    b.implicitly_wait(10)
-    yield b
-    b.quit()
 
 
 @given('the DuckDcukGo homepage is displayed', target_fixture='ddg_home')

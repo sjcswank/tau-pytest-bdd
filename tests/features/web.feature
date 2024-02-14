@@ -1,3 +1,4 @@
+@Web @DuckDuckGo
 Feature: DuckDuckGo Web Browsing
   As a user
   I want to find information online
